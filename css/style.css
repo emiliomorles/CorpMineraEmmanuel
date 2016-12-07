@@ -1,0 +1,348 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1em;
+    background-color: rgb(255, 255, 255);
+}
+
+img, video, object, embed {
+    max-width:100%;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1em;
+    text-shadow:4px 4px 4px rgb(158, 158, 158);
+    padding-top: 40px;
+    text-align: center;
+}
+
+a:link {
+    color: rgb(0, 111, 213);
+}
+
+a:hover {
+    color: rgb(5, 81, 250);
+    font-weight: bolder;
+}
+
+a:visited {
+    color: rgb(1, 98, 22);
+}
+
+a:active {
+    color: rgb(255, 0, 0);
+}
+
+
+/*ClearFix*/
+.clearfix:before, .clearfix:after {
+    content:"";
+    display:table;
+}
+/*NO DEJAR ESPACIOS ENTRE .clearfix: y su atributo en este
+caso before y after. Osea, no hacer esto .clearfix: before*/
+
+.clearfix:after {
+    clear:both;
+}
+
+.clearfix {
+    *zoom:1;
+}
+
+/*Contenedor*/
+.container {
+    width: 960px;
+    margin: 0 auto;
+    font-size: 1em;
+    height: auto;
+    line-height: 180%;
+}
+
+.bestbooks {
+    width: 100%;
+    background-color: rgb(158, 158, 158);
+    font-weight: bold;
+    text-align: center;
+}
+
+/*LOGO*/
+#logo {
+    width:150px;
+    border-top: 3px;
+}
+
+#logo:hover {
+    opacity: 0.8;
+}
+
+
+/*Menu de navegacion*/
+#menu {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(120, 158, 180);
+    font-weight: bold;
+    border-bottom: 7px solid rgb(0, 0, 0);
+}
+
+#menu ul {
+    padding: 0;
+    height: 40px;
+    width: 400px;
+}
+
+#menu li {
+    display: inline;
+    float: left;
+    background-color: rgb(120, 158, 180);
+}
+
+#menu a {
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    text-shadow: 1px 1px 0px rgb(40, 55, 68);
+    box-sizing: border-box;
+    /*En este caso como el ancho es de 600px y yo tengo 6 botones cada uno de 100px mas un border-right de 1px
+    entonces eso hace que se pase del limite (606 es mas del 100%). Solucion es bajar a 99pix los botones o
+    utilizar una PROPIEDAD LLAMADA box-sizing:border-box y escribir los atributos de la misma que apareceran en
+    la pagina web PREFIXR.COM  */
+    /*AQUI VAV LOS ATRIBUTOS DE BOX-SIZING
+    YA ESTABAN LISTOS TODOS LOS NAVEGADORES PERO DEJO ESTE COMENTARIO PARA MI CONOCIMIENTO*/
+
+ }
+
+#menu li:last-child a{
+    border-right: 0;
+}
+
+#menu a:hover, #menu a:active {
+    background-color: rgb(0, 0, 0);
+}
+
+#menu a#pull {
+    display: none;
+}
+
+/*Imagenes de menu*/
+.Imamenu {
+    background-color: rgb(178, 211, 231);
+    width: 100%;
+    height: auto;
+}
+
+#ima {
+    width: 100%;
+    height: auto;
+}
+
+#ima:hover {
+    opacity: 0.95;
+}
+
+#redes:hover {
+    opacity: 0.8;
+
+}
+
+/*imagenes*/
+#D-imag {
+    width: 400px;
+    height: 40px;
+    margin: auto;
+    position: static;
+    opacity: 1.0;
+}
+
+#D-imag:hover {
+    opacity: 0.95;
+}
+
+/*articulos*/
+
+#pp {
+    text-indent: 35px;
+}
+
+#col-1, #col-2 {
+    color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+#col-1 {
+    width: 100%;
+    float: center;
+    background-color: rgb(178, 211, 231);
+}
+
+
+/*Foter*/
+footer {
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 80px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 20px;
+}
+
+/******************************************************************************************************************************
+Media Queries de CSS3
+*******************************************************************************************************************************/
+@media screen and (max-width: 480px) {
+
+    .container {
+        width:100%;
+    }
+
+    #logo {
+        width:100px;
+        border-top: 3px;
+    }
+
+    #menu {
+        border-bottom:0;
+    }
+
+    #menu ul {
+        display:none;
+        height:auto;
+        width:100%;
+    }
+
+    #menu a#pull {
+        display:block;
+        background-color:rgb(124, 122, 122);
+        width:100%;
+        position:relative;
+        text-align:left;
+        text-indent:25px;
+    }
+
+    #menu a#pull:after {
+        content:"";
+        background:url("../images/nav-icon.png") no-repeat;
+        width:30px;
+        height:30px;
+        display:inline-block;
+        position:absolute;
+        right:15px;
+        top:10px;
+    }
+
+    #menu li {
+        width:50%;
+        float:left;
+        position:relative;
+    }
+
+    #menu a {
+        width:100%;
+    }
+
+    #col-1, #col-2 {
+        width:90%;
+        float:left;
+    }
+
+    #D-imag {
+        width: 250px;
+        height: 40px;
+        margin: auto;
+        position: static;
+    }
+
+    #facebook {
+        width: 60px;
+    }
+
+    #twitter {
+        width: 60px;
+    }
+
+    #youtube {
+        width: 60px;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width:767px) {
+
+    .container {
+        width:90%;
+    }
+
+    #logo {
+        width:140px;
+        border-top: 3px;
+    }
+
+    #menu {
+        height:auto;
+    }
+
+    #menu ul {
+        width:100%;
+        display:block;
+        height:auto;
+    }
+
+    #menu li {
+        width:50%;
+        float:left;
+        position:relative;
+    }
+
+    #menu a {
+        border-bottom:1px solid rgb(87, 105, 121);
+        border-right:1px solid rgb(87, 105, 121);
+        text-align:left;
+        width:100%;
+        text-indent:25px;
+    }
+
+    #col-1, #col-2 {
+        width:50%;
+    }
+
+    #D-imag {
+        width: 300px;
+        height: 40px;
+        margin: auto;
+        position: static;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+
+    .container {
+        width: 90%;
+    }
+
+    #logo {
+        width:160px;
+        border-top: 3px;
+    }
+
+    #col-1, #col-2 {
+        width: 44%;
+    }
+
+    #D-imag {
+        width: 350px;
+        height: 40px;
+        margin: auto;
+        position: static;
+    }
+
+}
