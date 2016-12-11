@@ -6,6 +6,7 @@
         <meta name="description" content="WEB de la personal Corporación Minera Emmanuel">
         <meta name="keywords" content="Corporación Minera Emmanuel, Emmanuel, Minería Emmanuel">
         <meta name="author" content="Emilio Morles">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="icon" type="image/png" href="images/Favicon.png">
 
         <!-- Viewport para dispositivos móviles -->
@@ -20,6 +21,17 @@
         <script src="js/modernizr-2.8.3-respond-1.4.2.min"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="jquery-1.11.3.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+            touch: true,
+            pauseOnAction: false,
+            pauseOnHover: false,
+        });
+      });
+    </script>
 
     </head>
 
@@ -32,11 +44,28 @@
         </header>
 
         <!-- Imagen de menu -->
-        <section class="Imamenu">
-            <div>
-                <img id="ima" src="images/sliderimage1.jpg" alt="paisaje">
-            </div>
-        </section>
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="images/1.jpg" alt="">
+                    <section class="flex-caption">
+                        <p>Corporación Minera Emmanuel</p>
+                    </section>
+                </li>
+                <li>
+                    <img src="images/2.jpg" alt="">
+                    <section class="flex-caption">
+                        <p>Corporación Minera Emmanuel</p>
+                    </section>
+                </li>
+                <li>
+                    <img src="images/3.jpg" alt="">
+                    <section class="flex-caption">
+                        <p>Corporación Minera Emmanuel</p>
+                    </section>
+                </li>
+            </ul>
+        </div>
 
         <!-- MENU DE NAVEGACION -->
         <nav id="menu">
@@ -86,8 +115,6 @@
         <div class="clearfix"></div>
 
         <br>
-
-        <h1><a href="#ima">Subir</a></h1>
 
         <!-- FOTTER -->
         <footer>&copy; 2016 Corporación Minera Emmanuel</footer>
