@@ -137,6 +137,11 @@ caso before y after. Osea, no hacer esto .clearfix: before*/
     height: auto;
 }
 
+#mm {
+    width: 25%;
+    height: auto;
+}
+
 #ima {
     width: 100%;
     height: auto;
@@ -273,6 +278,7 @@ Media Queries de CSS3
         width: 60px;
     }
 
+
 }
 
 @media screen and (min-width: 481px) and (max-width:767px) {
@@ -348,10 +354,9 @@ Media Queries de CSS3
 }
 
 @font-face {
+
   font-family: 'flexslider-icon';
-  src: url('fonts/flexslider-icon.eot');
-  src: url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff')
-  format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  src:url("../images/FlechaD.png") format('png');
   font-weight: normal;
   font-style: normal;
 }
@@ -455,7 +460,7 @@ Media Queries de CSS3
 	top: 50%;
 	text-align: center;
 	width: 100%;
-	font-size: 45px;
+	font-size: 3vw;
 	color: #fff;
     text-shadow: 2px 2px 5px #000;
 	font-weight: bold;
