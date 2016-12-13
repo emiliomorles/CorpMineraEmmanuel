@@ -71,10 +71,11 @@ caso before y after. Osea, no hacer esto .clearfix: before*/
 #logo {
     width:150px;
     border-top: 3px;
+    opacity: 0.5;
 }
 
 #logo:hover {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 
@@ -90,7 +91,7 @@ caso before y after. Osea, no hacer esto .clearfix: before*/
 #menu ul {
     padding: 0;
     height: 40px;
-    width: 400px;
+    width: 800px;
 }
 
 #menu li {
@@ -138,7 +139,12 @@ caso before y after. Osea, no hacer esto .clearfix: before*/
 }
 
 #mm {
-    width: 25%;
+    width: 42%;
+    height: auto;
+}
+
+#v {
+    width: 100%;
     height: auto;
 }
 
@@ -186,6 +192,21 @@ caso before y after. Osea, no hacer esto .clearfix: before*/
     background-color: #50aac2;
 }
 
+#SODIMAC {
+    width: 20%;
+}
+
+#Prod1 {
+    width: 25%
+}
+
+#Prod2 {
+    width: 25%
+}
+
+#Prod3 {
+    width: 25%
+}
 
 /*Foter*/
 footer {
@@ -482,4 +503,10 @@ Media Queries de CSS3
 
 .flexslider:hover .flex-direction-nav .flex-next:hover{
 	opacity: 1;
+}
+
+.particion {
+    padding-left: 20%;
+    display: inline;
+    width: 100%;
 }
