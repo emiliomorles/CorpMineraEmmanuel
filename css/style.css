@@ -231,10 +231,9 @@ footer {
     text-align: center;
     padding: 20px;
 
-/*SLIDER*/
-
 }
 
+/*SLIDERS*/
 .sliderproductos {
     width: 30%;
     margin: auto;
@@ -273,6 +272,51 @@ footer {
     100% { margin-left: -300%;}
 
 }
+
+.sliderclientes {
+    width: 30%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.sliderclientes ul {
+    display: flex;
+    padding: 0;
+    width: 500%;
+
+    animation: cambio 5s infinite alternate;
+    animation-timing-function: ease;
+}
+
+.sliderclientes li {
+    width: 100%;
+    list-style: none;
+}
+
+.sliderclientes img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0%;}
+    15% { margin-left: 0%;}
+
+    20% { margin-left: -100%;}
+    40% { margin-left: -100%;}
+
+    45% { margin-left: -200%;}
+    55% { margin-left: -200%;}
+
+    60% { margin-left: -300%;}
+    75% { margin-left: -300%;}
+
+    80% { margin-left: -400%;}
+    100% { margin-left: -400%;}
+
+
+
+}
+
 
 /******************************************************************************************************************************
 Media Queries de CSS3
