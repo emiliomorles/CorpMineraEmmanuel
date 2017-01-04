@@ -17,6 +17,10 @@ h1 {
     text-align: center;
 }
 
+.videoset {
+    border: 0px;
+}
+
 a:link {
     color: rgb(0, 111, 213);
 }
@@ -137,6 +141,10 @@ caso before y after. Osea, no hacer esto .clearfix: before*/
     display: none;
 }
 
+#titulocur {
+    text-align: center;
+}
+
 /*Imagenes de menu*/
 .Imamenu {
     background-color: #1997b9;
@@ -186,11 +194,16 @@ caso before y after. Osea, no hacer esto .clearfix: before*/
     opacity: 0.95;
 }
 
-/*articulos*/
-
 #pp {
-    text-indent: 35px;
+    text-align: justify;
+    text-justify: inter-word;
 }
+
+#escondido {
+    visibility: hidden;
+}
+
+/*articulos*/
 
 #col-1, #col-2 {
     color: rgb(255, 255, 255);
@@ -629,7 +642,7 @@ Media Queries de CSS3
 }
 
 .particion {
-    padding-left: 20%;
-    display: inline;
-    width: 100%;
+    width: 70%;
+    margin: auto;
+    overflow: visible;
 }
