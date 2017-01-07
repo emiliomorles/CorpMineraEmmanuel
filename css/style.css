@@ -64,6 +64,17 @@ caso before y after. Osea, no hacer esto .clearfix: before*/
     line-height: 180%;
 }
 
+.containerlogo {
+    width: 100px;
+    margin: 0 auto;
+    font-size: 1em;
+    height: auto;
+    line-height: 180%;
+    position: fixed;
+    top: 150px;
+    left: 5px;
+}
+
 .bestbooks {
     width: 100%;
     background-color: rgb(158, 158, 158);
@@ -74,20 +85,28 @@ caso before y after. Osea, no hacer esto .clearfix: before*/
 .fieldset2 {
     padding-left: 10%;
     border-color: transparent;
+    text-align: justify;
+    text-justify: inter-word;
 
 }
 
 /*LOGO*/
 #logo {
-    width:150px;
+    width:50%;
     border-top: 3px;
     opacity: 0.5;
+    top: 0;
+    left: 0;
 }
 
 #logo:hover {
-    opacity: 0.7;
+    opacity: 1;
+    width: 200%;
 }
 
+#listaclientes {
+    list-style-type:none;
+}
 
 /*Menu de navegacion*/
 #menu {
@@ -114,7 +133,7 @@ caso before y after. Osea, no hacer esto .clearfix: before*/
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     color: rgb(255, 255, 255);
     display: inline-block;
-    width: 130px;
+    width: 160px;
     text-align: center;
     text-decoration: none;
     line-height: 40px;
@@ -233,18 +252,30 @@ caso before y after. Osea, no hacer esto .clearfix: before*/
 }
 
 /*Foter*/
-footer {
-    height: 40px;
+.footerup {
+    height: 30px;
     background-color: rgb(0, 0, 0);
     margin-top: 80px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 0.75em;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 1.5em;
     letter-spacing: 2px;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
 
 }
+
 
 /*Galeria de productos*/
 
@@ -276,7 +307,7 @@ div.desc {
 /*SLIDERS*/
 /*slider de productos*/
 .sliderproductos {
-    width: 30%;
+    width: 20%;
     margin: auto;
     overflow: hidden;
 }
@@ -339,6 +370,30 @@ div.desc {
     width: 100%;
 }
 
+.sliderclientes2 {
+    width: 20%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.sliderclientes2 ul {
+    display: flex;
+    padding: 0;
+    width: 500%;
+
+    animation: cambio 5s infinite alternate;
+    animation-timing-function: ease;
+}
+
+.sliderclientes2 li {
+    width: 100%;
+    list-style: none;
+}
+
+.sliderclientes2 img {
+    width: 100%;
+}
+
 @keyframes cambio {
     0% { margin-left: 0%;}
     15% { margin-left: 0%;}
@@ -366,9 +421,23 @@ Media Queries de CSS3
         width:100%;
     }
 
+    .sliderproductos {
+        width: 50%;
+        margin: auto;
+        overflow: hidden;
+    }
+
     #logo {
-        width:100px;
+        width:25%;
         border-top: 3px;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+    }
+
+    #logo:hover {
+        opacity: 1;
+        width: 100%;
     }
 
     #menu {
@@ -444,9 +513,23 @@ Media Queries de CSS3
         width:100%;
     }
 
+    .sliderproductos {
+        width: 50%;
+        margin: auto;
+        overflow: hidden;
+    }
+
     #logo {
-        width:140px;
+        width:25%;
         border-top: 3px;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+    }
+
+    #logo:hover {
+        opacity: 1;
+        width: 100%;
     }
 
     #menu {
@@ -492,9 +575,23 @@ Media Queries de CSS3
         width: 100%;
     }
 
+    .sliderproductos {
+        width: 40%;
+        margin: auto;
+        overflow: hidden;
+    }
+
     #logo {
-        width:160px;
+        width:50%;
         border-top: 3px;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+    }
+
+    #logo:hover {
+        opacity: 1;
+        width: 200%;
     }
 
     #col-1, #col-2 {
@@ -534,6 +631,7 @@ Media Queries de CSS3
 
 .slides img{
 	width: 100%;
+    position: relative;
 }
 
 .slides,
