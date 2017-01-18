@@ -21,8 +21,8 @@
         <script src="js/modernizr-2.8.3-respond-1.4.2.min"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="jquery-1.11.3.min.js"></script>
-        <script src="js/jquery.flexslider.js"></script>
         <script type="text/javascript" charset="utf-8"></script>
+        <script>function hidespinner(){ document.getElementById('loading-spinner').style.display='none'; }</script>
     <!-- Menu de Slider-->
         <script>
             $(window).load(function() {
@@ -36,7 +36,9 @@
 
     </head>
 
-    <body>
+    <body onload="hidespinner()">
+        <div id="loading-spinner">
+        </div>
 
         <header>
             <div class="containerlogo">
@@ -54,26 +56,11 @@
                 <a href="#" id="pull">Menú</a>
             </nav>
             <!-- Imagen de menu -->
-            <div class="flexslider">
-                <ul class="slides">
-                    <li>
-                        <img src="images/1.jpg" alt="">
-                        <section class="flex-caption">
-                            <p>Corporación Minera Emmanuel</p>
-                        </section>
-                    </li>
-                    <li>
-                        <img src="images/2.jpg" alt="">
-                        <section class="flex-caption">
-                            <p>Corporación Minera Emmanuel</p>
-                        </section>
-                    </li>
-                    <li>
-                        <img src="images/3.jpg" alt="">
-                        <section class="flex-caption">
-                            <p>Corporación Minera Emmanuel</p>
-                        </section>
-                    </li>
+            <div class="sliderproductos2">
+                <ul>
+                    <li><img src="images/1.jpg" alt=""></li>
+                    <li><img src="images/2.jpg" alt=""></li>
+                    <li><img src="images/3.jpg" alt=""></li>
                 </ul>
             </div>
         </header>
@@ -156,6 +143,7 @@
                 });
             });
         </script>
+
 
     </body>
 </html>
